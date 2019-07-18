@@ -14,3 +14,6 @@ for i in x:
 avg = sum_ages / len(x)
 print(avg)
 print(lst_ages)
+
+
+#hello comment 
