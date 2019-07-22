@@ -17,9 +17,12 @@ body {
 .allleft {
   text-align: right
 }
+.allcenter {
+  text-align: center;
+}
 #flash {
   float: left
 }
 #cnco {
-
+  float: right
 }
