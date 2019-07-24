@@ -65,13 +65,26 @@ function changeMadj() {
 // when click on name (heading), grow in size by 10px each time
 
 var size = 32
-var x = document.getElementsByTagName("h1")[0];
+var x = document.getElementById("name")
 var delta = 10
 
-function bigText() {
-  x.setAttribute("style", `font-size:${size}px`)
+function bigText(){
+  x.style.fontSize = `${size}px`
   size += delta;
   if (size > 92 || size < 32) {
     delta = delta * -1;
   }
 }
+
+document.getElementById("name").addEventListener("click",
+function() {
+  bigText();
+  x.style.color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+});
+
+
+document.getElementById("back").addEventListener("click",
+  function () {
+    alert("hi");
+  }
+)
